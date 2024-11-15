@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/aerial-view-beautiful-cityscape-with-illuminated-buildings-sea-storm-clouds_181624-6359.jpg?t=st=1731690302~exp=1731693902~hmac=d5f704f53a47922fb877f5178e86050b260d7597127c73b83f455ff19ac12b78&w=2000");
+}
+
+/* Header styling  */
+
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(17, 48, 68, 0.7),  rgba(36, 101, 144, 0.7));
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+nav h1{
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#destination{
+    padding: 7px 30px;
+    border-radius: 20px;
+    width: 350px;
+    padding-left:10px;
+}
+
+#searchWrapper{
+    position: relative;
+}
+
+#searchBtn{
+    position: absolute;
+    top:15%;
+    right:75px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 115, 128);
+    color:white;
+    cursor: pointer;
+}
+ #resetBtn{
+    position: absolute;
+    top:15%;
+    right:15px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 115, 128);
+    color:white;
+    cursor: pointer;
+
+ }
+
+ /* Styling Body Content */
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+#intro h1{
+    color: white;
+    font-size: 50px;
+}
