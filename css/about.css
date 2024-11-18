@@ -1,12 +1,11 @@
 #about{
-    border: 2px solid black;
     margin-right: 30px;
     margin-left: 30px;
     padding-top: 50px;
     color: white;
 
     display: flex;
-    gap:70px;
+    gap:120px;
 }
 
 #social{
@@ -19,30 +18,22 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    border: 2px solid black;
 
 }
 
-#content{
-    border: solid 2px black;
-    
-}
 
 #content h1{
-    font-size: 70px;
     margin-bottom: 50px;
 }
 
 #content p{
     background-color: rgba(0, 0, 0, 0.229);
     padding: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 
 }
 
 #team{
-    border: solid 2px black;
-
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -51,7 +42,6 @@
 .members{
     width: 250px;
     height: 150px;
-    border: solid black 2px;
     background-color: rgba(0, 0, 0, 0.229);
     padding: 10px;
 
