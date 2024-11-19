@@ -23,13 +23,19 @@ nav ul{
 
 nav ul li{
     display: inline;
-    margin-right: 10px;
+    padding: 10px 20px;
 }
 
 nav li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+nav li:hover{
+    background-color: rgba(0, 115, 128, 0.4);
+    cursor: pointer;
+
 }
 
 #destination{

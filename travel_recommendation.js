@@ -7,9 +7,6 @@ function searchDestination(){
     const resultsElement = document.getElementById('results');
     resultsElement.innerHTML = '';
 
-
-
-
     fetch('./travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
@@ -28,33 +25,62 @@ function searchDestination(){
             console.log(destination);
 
             if(key === 'countries'){
-                for(place of destination){
-                    var placeContainer = document.createElement('div');
-                    var nameElement = document.createElement('h2');
+
+                //Iterates array of countries
+                //creates elements with information from json 
+                for(country of destination){  
+                    //itterates array of cities
+                    for(city of country.cities){
+                        let placeContainer = document.createElement('div');
+                        let nameElement = document.createElement('h2');
+                        let descriptionElement = document.createElement('p');
+                        let imgElement = document.createElement('img');
+                        let buttonElement = document.createElement('button');
+
+                        imgElement.src = `./pictures/${city.imageUrl}`;
+                        descriptionElement.innerHTML = city.description;
+
+                        nameElement.innerHTML = city.name;
+                        buttonElement.innerHTML = 'Visit';
+
+                        buttonElement.setAttribute('id', 'visit');
+                        imgElement.classList.add('thumbnail');
     
-                    nameElement.innerHTML = place.name;
-    
-                    placeContainer.appendChild(nameElement);
-                    resultsElement.appendChild(placeContainer);
+                        placeContainer.appendChild(imgElement);
+                        placeContainer.appendChild(nameElement);
+                        placeContainer.appendChild(descriptionElement);
+                        placeContainer.appendChild(buttonElement);
+                        resultsElement.appendChild(placeContainer);
+                    }
+
+                    
                 }
             }else{
+                //Iterates thru array of places
+                //creates elements with information from json 
                 for(place of destination){
                     var placeContainer = document.createElement('div');
                     var nameElement = document.createElement('h2');
                     var descriptionElement = document.createElement('p');
+                    var imgElement = document.createElement('img');
+                    var buttonElement = document.createElement('button');
     
                     nameElement.innerHTML = place.name;
                     descriptionElement.innerHTML = place.description;
-    
-                    placeContainer.appendChild(nameElement);
+                    imgElement.src = `./pictures/${place.imageUrl}`;
+                    buttonElement.innerHTML = 'Visit';
+                    
+                    buttonElement.setAttribute('id', 'visit');
+                    imgElement.classList.add('thumbnail');
+                    
+
+                    placeContainer.appendChild(imgElement);
+                    placeContainer.appendChild(nameElement);    
                     placeContainer.appendChild(descriptionElement);
+                    placeContainer.appendChild(buttonElement);
                     resultsElement.appendChild(placeContainer);
                 }
             }
-
-            
-            
-
         }else{
             console.log('no matches found');
 
@@ -66,4 +92,14 @@ function searchDestination(){
     })
 }
 
+function reset(){
+    let resultsEle = document.getElementById('results');
+    let destinationEle = document.getElementById('destination');
+
+    resultsEle.innerHTML = '';
+    destinationEle.value = '';
+
+}
+
 searchBtn.addEventListener('click', searchDestination);
+resetBtn.addEventListener('click', reset);

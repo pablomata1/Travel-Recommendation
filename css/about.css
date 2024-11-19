@@ -26,8 +26,8 @@
     margin-bottom: 50px;
 }
 
-#content p{
-    background-color: rgba(0, 0, 0, 0.229);
+#message{
+    background-color: rgba(0, 115, 128, 0.4);
     padding: 20px;
     margin-bottom: 100px;
 
@@ -42,7 +42,7 @@
 .members{
     width: 250px;
     height: 150px;
-    background-color: rgba(0, 0, 0, 0.229);
+    background-color: rgba(0, 115, 128, 0.4);
     padding: 10px;
 
     display: flex;
@@ -62,9 +62,6 @@
     color: whitesmoke
 }
 
-#team .members p {
-    margin: 0px;
-}
 
 
 
