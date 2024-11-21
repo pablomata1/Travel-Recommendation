@@ -14,7 +14,7 @@
 }
 
 #intro-content{
-    background-color: rgba(0, 115, 128, 0.432);
+    background-color: rgba(0, 115, 128, 0.7);
     padding: 20px;
 }
 
@@ -87,4 +87,21 @@
 .thumbnail{
     height: 250px;
     width: 100%;
+}
+
+
+#results #message{
+    background-color: rgba(0, 115, 128, 0.7);
+    color: white;
+
+    align-items: center;
+    justify-content:center;
+    gap:0;
+    padding: 10px;
+    height: 300px;
+}
+
+#message h4{
+    font-weight:bold;
+    line-height: 3;
 }

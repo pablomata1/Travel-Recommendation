@@ -9,7 +9,11 @@ body {
     font-family: Arial, sans-serif;
     background-image:
     linear-gradient(to right, rgba(17, 48, 68, 0.935),  rgba(36, 101, 144, 0.267)),
-    url("https://img.freepik.com/free-photo/aerial-view-beautiful-cityscape-with-illuminated-buildings-sea-storm-clouds_181624-6359.jpg?t=st=1731690302~exp=1731693902~hmac=d5f704f53a47922fb877f5178e86050b260d7597127c73b83f455ff19ac12b78&w=2000");
+    url('../pictures/backgroundTravel.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 button:hover, i:hover{
