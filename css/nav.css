@@ -6,7 +6,7 @@ nav{
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, rgba(17, 48, 68, 0.7),  rgba(36, 101, 144, 0.7));
+    background-image: linear-gradient(to right, rgba(17, 48, 68, 0.8),  rgba(36, 101, 144, 0.9));
 
     padding-right: 10px;
     padding-left: 10px;
@@ -22,14 +22,17 @@ nav ul{
 }
 
 nav ul li{
-    display: inline;
-    padding: 10px 20px;
+    float: left;
 }
 
 nav li a{
+    display: block;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 15px 20px;
+
+
 }
 
 nav li:hover{

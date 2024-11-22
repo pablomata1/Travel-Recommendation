@@ -10,10 +10,7 @@ body {
     background-image:
     linear-gradient(to right, rgba(17, 48, 68, 0.935),  rgba(36, 101, 144, 0.267)),
     url('../pictures/backgroundTravel.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-size: 150%;
 }
 
 button:hover, i:hover{
