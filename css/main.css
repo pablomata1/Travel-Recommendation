@@ -4,13 +4,38 @@
     box-sizing: border-box;
 }
 
+/* Need to make height 100% for both html and body in order to be truely 100% in height
+    Alterantive use vw and vh units, see body tag css
+*/
+html, body{
+    height: 100%;
+
+}
+
 body {
     position: relative;
     font-family: Arial, sans-serif;
+     /* width: 100vw;
+    height: 100vh;  */
+
+}
+
+.background-image{    
+    position: absolute;
+    top:0;
+    left:0;
+    /* In order to make it cover whole page need to specify it 100 by 100 first */
+    width: 100%;
+    height: 100%;
     background-image:
-    linear-gradient(to right, rgba(17, 48, 68, 0.935),  rgba(36, 101, 144, 0.267)),
+    linear-gradient(to right, rgba(17, 48, 68, 0.9),  rgba(36, 101, 144, 0.05)),
     url('../pictures/backgroundTravel.jpg');
-    background-size: 150%;
+    /* background-size: 100% 100%; */
+    /* background-image: url('../pictures/backgroundTravel.jpg'); */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(.98);
+    z-index: -1;
 }
 
 button:hover, i:hover{

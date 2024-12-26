@@ -82,6 +82,7 @@ function searchDestination(){
     resultsElement.innerHTML = '';
 
     if(input){
+        //fetching file travel json info
         fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {

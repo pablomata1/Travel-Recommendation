@@ -1,25 +1,25 @@
-#about{
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-top: 200px;
+#contact{
+    padding-left: 40px;
+    padding-right: 20px;
     color: white;
+    height: calc(100% - 100px);   
+    overflow: hidden;
 
     display: flex;
-    flex-wrap: wrap;
-    gap:120px;
+    gap: 200px;
+    align-items: center;
 
 }
 
 #social{
-    align-self: flex-end;
     margin-bottom: 70px;
-    font-size: 30px;
+    font-size: 40px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 
